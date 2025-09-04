@@ -24,4 +24,4 @@ jobs:
         run: python -m pytest -q
 
       - name: Print message
-        run: python test-app.py
+        run: python tests/test-app.py
