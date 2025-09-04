@@ -7,18 +7,18 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test-python:
+  test-node:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: "3.11"
+          node-version: "20"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: npm ci || npm install
 
-      - name: Run pytest and print message
-        run: python -m pytest -q -s
+      - name: Run Jest tests and print message
+        run: npm test -- --ci
