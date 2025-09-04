@@ -22,3 +22,6 @@ jobs:
 
       - name: Run pytest
         run: python -m pytest -q
+
+      - name: Print message
+        run: python test-app.py
