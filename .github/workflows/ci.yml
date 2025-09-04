@@ -20,8 +20,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run pytest
-        run: python -m pytest -q
-
-      - name: Print message
-        run: python tests/test-app.py
+      - name: Run pytest and print message
+        run: python -m pytest -q -s
