@@ -20,10 +20,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-<<<<<<< HEAD
       - name: Run pytest; show current date
         run: python -m pytest -s -q
-=======
-      - name: Add Jest tests and CI test job; show current date
-        run: npm test -- --ci
->>>>>>> bf5bb3d61976898a2c12d333f65ee1311de8d09a
