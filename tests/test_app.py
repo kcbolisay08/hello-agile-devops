@@ -5,4 +5,4 @@ today = date.today()
 
 def test_greet_returns_expected_message():
     assert greet("Team") == "Hello, Team! Welcome to Agile DevOps."
-    print("\nGreeting from app:", greet("Team"))
+    print(greet("Team"))
