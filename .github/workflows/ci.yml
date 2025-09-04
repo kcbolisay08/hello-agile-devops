@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
-      - name: Run Jest tests
+      - name: Add Jest tests and CI test job; show current date
         run: npm test -- --ci
